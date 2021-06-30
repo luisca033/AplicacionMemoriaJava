@@ -1,0 +1,33 @@
+public class camisas extends inventario
+    {
+    
+    static ArrayList <camisas> z = new ArrayList();
+
+    public camisas(String Color, double Precio, String Genero) {
+        super(Color, Precio, Genero);
+   
+    }
+     public camisas() {
+        camisas c = new  camisas("Negro",25000,"Hombre");
+        z.add(c);
+        camisas c1= new camisas("Azul",35000,"Hombre");
+        z.add(c1);
+        camisas c2= new camisas("rojo",25000,"Hombre");
+        z.add(c2);
+        camisas cm= new camisas("Negro",25000,"Mujer");
+        z.add(cm);
+        camisas cm2= new camisas("Azul",35000,"Mujer");
+        z.add(cm2);
+        camisas cm3= new camisas("Rojo",40000,"Mujer");
+        z.add(cm3);
+    }
+    public String get_color() {
+       return this.Color;
+    }
+    public String get_genero() {
+       return this.Genero;
+    }
+    public double get_precio()
+    {
+    return this.Precio;
+    }
